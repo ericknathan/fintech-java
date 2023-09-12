@@ -21,7 +21,7 @@ public class PessoaFisica extends Cliente implements Serializable {
      */
     private String rg;
 
-//--------------------------------------------------------------------------------------------------------
+    //--------------------------------------------------------------------------------------------------------
     //Métodos construtores:
 
     //Método construtor padrão (objetivo: manter padrão javaBeans):
@@ -52,9 +52,8 @@ public class PessoaFisica extends Cliente implements Serializable {
         this.rg = rg;
     }
 
-
-//--------------------------------------------------------------------------------
-// Métodos Getters e Setters:
+    //--------------------------------------------------------------------------------
+    // Métodos Getters e Setters:
 
     /**
      * Método GET que irá retornar o CPF.
@@ -88,8 +87,7 @@ public class PessoaFisica extends Cliente implements Serializable {
         this.rg = rg;
     }
 
-
-//--------------------------------------------------------------------------------
+    //--------------------------------------------------------------------------------
     //Métodos Adicionais:
     /**
      * Método que verifica se um cliente Pessoa Física está cadastrado, com base no CPF.
@@ -99,6 +97,5 @@ public class PessoaFisica extends Cliente implements Serializable {
     public boolean consultarPessoaFisica(String cpf) {
         return this.cpf.equals(cpf);
     }
-
 } //FIM
 

@@ -9,7 +9,6 @@ import java.io.Serializable;
  */
 
 public class Pessoa implements Serializable {
-
     /**
      * Uma constante que representa o ID de versão único para a classe serializável.
      * Esse ID é usado durante a desserialização para verificar se o remetente e o receptor
@@ -22,42 +21,34 @@ public class Pessoa implements Serializable {
      */
     private String nome;
 
-
     /**
      * CEP referente ao endereço da Pessoa.
      */
     private int cep;
-
 
     /**
      * Número do logradouro do endereço cadastrado pela Pessoa.
      */
     private int nroLogradouro;
 
-
     /**
      * Anotação de complemento do Endereço da Pessoa.
-      */
+     */
     private String complemento;
-
 
     /**
      * Telefone de Contato da Pessoa.
      */
     private int telContato;
 
-
-
-
     //Métodos:
-//-------------------------------------------------------------------------------
+    //-------------------------------------------------------------------------------
     //Método construtor padrão (objetivo: manter padrão javaBeans):
     /**
      * Método Construtor padrão.
      */
     public Pessoa(){
     }
-
 
     //Método Construtor com parâmetros para instaciação:
     /**
@@ -77,7 +68,7 @@ public class Pessoa implements Serializable {
     }
 
 
-//--------------------------------------------------------------------------------
+    //--------------------------------------------------------------------------------
     //Métodos Getters e Setters:
     /**
      * Método GET que irá retornar o nome da Pessoa.
@@ -95,9 +86,6 @@ public class Pessoa implements Serializable {
         this.nome = nome;
     }
 
-
-
-
     /**
      * Método GET que irá retornar o número do CEP cadastrado.
      * @return Retorna o número do cep cadastrado.
@@ -113,9 +101,6 @@ public class Pessoa implements Serializable {
     public void setCep(int cep) {
         this.cep = cep;
     }
-
-
-
 
     /**
      * Método GET que irá retornar o número do logradouro do endereço cadastrado.
@@ -133,9 +118,6 @@ public class Pessoa implements Serializable {
         this.nroLogradouro = nroLogradouro;
     }
 
-
-
-
     /**
      * Método GET que irá retornar o complemento do endereço cadastrado.
      * @return Retorna o complemento referente ao endereço de cadastro.
@@ -152,9 +134,6 @@ public class Pessoa implements Serializable {
         this.complemento = complemento;
     }
 
-
-
-
     /**
      * Método GET que irá retornar o número do contato telefônico cadastrado.
      * @return Retorna o número do contato telefônico.
@@ -170,6 +149,4 @@ public class Pessoa implements Serializable {
     public void setTelContato(int telContato) {
         this.telContato = telContato;
     }
-//--------------------------------------------------------------------------------
-
-}//FIM
+} //FIM

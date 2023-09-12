@@ -71,10 +71,9 @@ public class Conta implements Serializable {
         this.numeroConta = numeroConta;
         this.saldo = saldo;
         this.movimentacoes = (movimentacoes != null) ? movimentacoes : new ArrayList<>();
-
     }
 
-//--------------------------------------------------------------------------------
+	//--------------------------------------------------------------------------------
     // Métodos Getters e Setters:
 
     /**
@@ -174,7 +173,7 @@ public class Conta implements Serializable {
         this.movimentacoes = (movimentacoes != null) ? new ArrayList<>(movimentacoes) : new ArrayList<>();
     }
 
-//--------------------------------------------------------------------------------
+	//--------------------------------------------------------------------------------
     //Métodos Adicionais:
     /**
      * Método que adiciona uma conta ao titular (Cliente).
@@ -200,7 +199,6 @@ public class Conta implements Serializable {
     public void removeMovimentacao(Movimentacao movimentacao) {
         this.movimentacoes.remove(movimentacao);
     }
-
 } //FIM
 
 

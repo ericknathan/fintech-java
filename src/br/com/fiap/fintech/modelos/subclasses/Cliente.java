@@ -10,28 +10,24 @@ import java.util.List;
  * @author Caio Geraldi; Emily Cruz; Erick Nathan; Guilherme Naufal; João Paulo Maciel.
  * @version 1.0
  */
-public class Cliente extends Pessoa implements  Serializable {
+public class Cliente extends Pessoa implements Serializable {
     private static final long serialVersionUID = 2L;
     /**
      * SENHA de cadastrada pelo Cliente.
      */
     private String senha;
 
-
     /**
      * LISTA de contas do Cliente.
      */
     private List<Conta> contas;
-
 
     /**
      * E-MAIL de cadastro do Cliente.
      */
     private String email;
 
-
-
-//--------------------------------------------------------------------------------------------------------
+    //--------------------------------------------------------------------------------------------------------
     //Métodos construtores:
 
     //Método construtor padrão (objetivo: manter padrão javaBeans):
@@ -64,7 +60,7 @@ public class Cliente extends Pessoa implements  Serializable {
         this.email = email;
     }
 
-//--------------------------------------------------------------------------------
+    //--------------------------------------------------------------------------------
     //Métodos Getters e Setters:
     /**
      * Método SET que pode ser utilizado para alterar a SENHA.
@@ -74,9 +70,6 @@ public class Cliente extends Pessoa implements  Serializable {
         this.senha = senha;
     }
 
-
-
-
     /**
      * Método GET que irá retornar a lista de contas.
      * @return Retorna a lista de contas.
@@ -84,9 +77,6 @@ public class Cliente extends Pessoa implements  Serializable {
     public List<Conta> getContas() {
         return contas;
     }
-
-
-
 
     /**
      * Método GET que irá retornar o e-mail de cadastro.
@@ -103,8 +93,8 @@ public class Cliente extends Pessoa implements  Serializable {
     public void setEmail(String email) {
         this.email = email;
     }
-//--------------------------------------------------------------------------------
 
+    //--------------------------------------------------------------------------------
     //Métodos Adicionais:
     /**
      * Permite adicionar uma conta na lista de contas.
@@ -145,7 +135,5 @@ public class Cliente extends Pessoa implements  Serializable {
     public boolean hasConta(Conta conta) {
         return this.contas.contains(conta);
     }
-
-
 } //FIM
 

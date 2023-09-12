@@ -88,8 +88,8 @@ public class Movimentacao implements Serializable {
         }
     }
 
-//--------------------------------------------------------------------------------
-// Métodos Getters e Setters:
+    //--------------------------------------------------------------------------------
+    // Métodos Getters e Setters:
 
     /**
      * Método GET que irá retornar a conta associada à movimentação.
@@ -186,6 +186,4 @@ public class Movimentacao implements Serializable {
     public void setRecorrencia(String recorrencia) {
         this.recorrencia = recorrencia;
     }
-
-
 } //FIM

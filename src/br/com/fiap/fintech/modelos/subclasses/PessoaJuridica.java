@@ -52,8 +52,8 @@ public class PessoaJuridica extends Cliente implements Serializable {
         this.inscMunicipal = inscMunicipal;
     }
 
-//--------------------------------------------------------------------------------
-// Métodos Getters e Setters:
+    //--------------------------------------------------------------------------------
+    // Métodos Getters e Setters:
 
     /**
      * Método GET que irá retornar o CNPJ.
@@ -87,7 +87,7 @@ public class PessoaJuridica extends Cliente implements Serializable {
         this.inscMunicipal = inscMunicipal;
     }
 
-//--------------------------------------------------------------------------------
+    //--------------------------------------------------------------------------------
     //Métodos Adicionais:
     /**
      * Método que verifica se um cliente Pessoa Jurídica está cadastrado, com base no CNPJ.
@@ -97,5 +97,4 @@ public class PessoaJuridica extends Cliente implements Serializable {
     public boolean consultarPessoaJuridica(String cnpj) {
         return this.cnpj.equals(cnpj);
     }
-
 } //FIM

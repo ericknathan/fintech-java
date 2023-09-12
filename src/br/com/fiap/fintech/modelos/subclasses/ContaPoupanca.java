@@ -126,5 +126,4 @@ public class ContaPoupanca extends Conta implements Serializable {
         // Implementação da consulta da Conta Poupança
         // Será uma lógica ou conexão com banco de dados aqui
     }
-}//FIM
-
+} //FIM

@@ -10,7 +10,6 @@ import java.io.Serializable;
  * @version 1.0
  */
 public class InstituicaoFinanceira extends Pessoa implements Serializable {
-
     /**
      * Uma constante que representa o ID de versão único para a classe serializável.
      */
@@ -36,7 +35,6 @@ public class InstituicaoFinanceira extends Pessoa implements Serializable {
         super();
     }
 
-
     //Método Construtor com parâmetros para instaciação:
     /**
      * Método Construtor com Parâmetros para instanciação.
@@ -48,8 +46,7 @@ public class InstituicaoFinanceira extends Pessoa implements Serializable {
      * @param codigoRegistro Código de registro da instituição financeira.
      * @param tipoInstituicao Tipo de instituição.
      */
-    public InstituicaoFinanceira(String nome, int cep, int nroLogradouro, String complemento, int telContato,
-                                 String codigoRegistro, String tipoInstituicao) {
+    public InstituicaoFinanceira(String nome, int cep, int nroLogradouro, String complemento, int telContato, String codigoRegistro, String tipoInstituicao) {
         super(nome, cep, nroLogradouro, complemento, telContato);
         this.codigoRegistro = codigoRegistro;
         this.tipoInstituicao = tipoInstituicao;
@@ -108,6 +105,4 @@ public class InstituicaoFinanceira extends Pessoa implements Serializable {
         // Implementação da consulta da Instituição Financeira
         // Será uma lógica ou conexão com banco de dados aqui
     }
-
-
-}//FIM
+} //FIM
